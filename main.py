@@ -4,7 +4,6 @@ import sys
 
 source_file = "./text.txt"
 destination_folder = "./duplicates"
-file_max = 10000 # this is when it will stop copying the files/
 
 def copy_files(source_file, destination_folder,):
     """
@@ -25,9 +24,6 @@ def copy_files(source_file, destination_folder,):
         print(file_count)
         destination_path = os.path.join(destination_folder, f"{os.path.splitext(os.path.basename(source_file))[0]}_{file_count}{os.path.splitext(source_file)[1]}") #Preserves extension and adds a number
         shutil.copy2(source_file, destination_path)  # copy2 preserves metadata
-        if (file_count == file_max):
-            print("Done!")
-            sys.exit()
 
 # Example usage:
 copy_files(source_file, destination_folder)
