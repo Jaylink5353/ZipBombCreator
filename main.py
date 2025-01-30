@@ -2,8 +2,8 @@ import os
 import shutil
 import sys
 
-source_file = "/Users/29goddardjay/Desktop/zip/text.txt"
-destination_folder = "/Users/29goddardjay/Desktop/zip/duplicates/"
+source_file = "./text.txt"
+destination_folder = "./duplicates"
 file_max = 10000 # this is when it will stop copying the files/
 
 def copy_files(source_file, destination_folder,):
