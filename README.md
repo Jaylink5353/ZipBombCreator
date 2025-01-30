@@ -1,6 +1,7 @@
-# ZipBombCreator
-Creates a "Zip Bomb" for trolling people
+# ZipBombCreatorUnlimited
 
+Creates a "Zip Bomb" for trolling people
+This one you can run overnight to make the largest one! It wont stop unless you put in ctrl+c
 Required packages:
 python3 and shutil
 
